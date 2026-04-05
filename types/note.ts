@@ -1,4 +1,4 @@
-type Note = {
+export type Note = {
   title: string;
   category: 'work' | 'school' | 'personal';
   content: string;
@@ -8,5 +8,3 @@ type Note = {
   tags: string[];
   id: number;
 };
-
-export default Note;

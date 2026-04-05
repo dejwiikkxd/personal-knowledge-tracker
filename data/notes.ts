@@ -1,6 +1,6 @@
-import Note from "@/types/note";
+import { Note } from "@/types/note";
 
-const notes: Note[] = [
+export const notes: Note[] = [
   {
     title: "Learn TypeScript",
     category: 'work',
@@ -23,4 +23,3 @@ const notes: Note[] = [
   },
 ];
 
-export default notes;

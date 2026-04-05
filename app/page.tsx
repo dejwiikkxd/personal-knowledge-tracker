@@ -1,5 +1,6 @@
 import Image from "next/image";
-import notes from "../data/notes";
+import {notes} from "../data/notes";
+import { NoteCard } from "@/components/NoteCard";
 
 export default function Home() {
   return (
@@ -19,10 +20,9 @@ export default function Home() {
           </h1>
 
           {notes.map((note) => (
-            <div key={note.id} className="">
-              <h2>{note.title}</h2>
-              <p>{note.content}</p>
-            </div>
+            <NoteCard note={note} key={note.id}>
+              
+            </NoteCard>
           ))}
 
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
