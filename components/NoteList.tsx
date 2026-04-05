@@ -14,5 +14,5 @@ export function NoteList({ notes }: Props){
                 </NoteCard>
             ))}
         </div>
-    );
-}
+    )
+};
