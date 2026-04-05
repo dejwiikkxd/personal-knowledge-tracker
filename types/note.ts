@@ -1,6 +1,6 @@
 type Note = {
   title: string;
-  category: string[];
+  category: 'work' | 'school' | 'personal';
   content: string;
   priority: 'low' | 'medium' | 'high';
   status: 'todo' | 'in-progress' | 'done';
@@ -8,3 +8,5 @@ type Note = {
   tags: string[];
   id: number;
 };
+
+export default Note;
