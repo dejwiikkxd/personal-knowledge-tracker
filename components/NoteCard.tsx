@@ -4,17 +4,17 @@ type Props ={
   note: Note;
 }
 
-export function NoteCard(props: Props){
+export function NoteCard({note}: Props){
   return (
     <div className="p-4 border rounded-md shadow-sm">
-      <h2 className="text-xl font-semibold">{props.note.title}</h2>
-      <p className="">{props.note.content}</p>
+      <h2 className="text-xl font-semibold">{note.title}</h2>
+      <p className="">{note.content}</p>
       <div className="mt-2 text-sm ">
-        <span>Category: {props.note.category}</span>
+        <span>Category: {note.category}</span>
         <span className="mx-2">|</span>
-        <span>Priority: {props.note.priority}</span>
+        <span>Priority: {note.priority}</span>
         <span className="mx-2">|</span>
-        <span>Status: {props.note.status}</span>
+        <span>Status: {note.status}</span>
       </div>
     </div>
   );
